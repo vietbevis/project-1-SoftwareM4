@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+:root {
+  --font-main: 'DM Sans', sans-serif;
+  --color-text-main: #232323;
+  --color-bg-white: #efefef;
+  --color-bg-black: #1b2026;
+  --color-white: #ffffff;
+  --color-text-hover: #565656;
+  --color-text: #bbbbbb;
+  --color-btn-yellow: #f7d9c4;
+  --color-btn-black: #232323;
+  --color-bg-gray: #31363b;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+.h2 {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: var(--font-main);
+  line-height: 70px;
+}
+
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  width: 185px;
+  height: 60px;
+  border-radius: 5px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--font-main);
+}
+
+.btn-yellow {
+  background-color: var(--color-btn-yellow);
+  border: 2px solid var(--color-btn-yellow);
+  transition: all 0.5s;
+  color: var(--color-text-main);
+}
+
+.btn-yellow:hover {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.btn-trans {
+  border: 2px solid gray;
+  transition: all 0.5s;
+  color: var(--color-white);
+}
+
+.btn-trans:hover {
+  background-color: var(--color-btn-yellow);
+  border: 2px solid var(--color-btn-yellow);
+  color: var(--color-text-main);
+}
+
+.btn-black {
+  background-color: var(--color-btn-black);
+  border: 2px solid var(--color-btn-black);
+  transition: all 0.5s;
+  color: var(--color-white);
+}
+
+.btn-black:hover {
+  background-color: black;
+  border: 2px solid black;
+}
+
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+
+  .h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+  }
+
+  .h2 {
+    font-size: 40px;
+  }
+}
+
+strong {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  font-family: var(--font-main) !important;
+  color: #777777;
+}
